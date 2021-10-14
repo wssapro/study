@@ -25,7 +25,7 @@ public class Test {
          * 3.插入排序
          * 始终认为前面是已经排好序的，寻找符合的位置插进去
          */
-        //InsertSort.insertSort(arr);
+        InsertSort.insertSort(arr);
         /**
          * 4.希尔排序
          * 快速版的插入排序，插入排序调整位置太多次，通过有规律的相隔比较进行插入
