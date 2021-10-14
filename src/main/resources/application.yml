@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  aop:
+    proxy-target-class: true
+    auto: false
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual
+      direct:
+        acknowledge-mode: manual
+logging:
+  level:
+    root: debug
