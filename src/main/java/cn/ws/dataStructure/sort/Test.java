@@ -14,7 +14,7 @@ public class Test {
          * 1.冒泡排序
          * 外循环遍历N-1次，内循环第一次N-1次，之后递减。与前一个作比较，
          */
-        //BubbleSort.bubbleSort(arr);
+        BubbleSort.bubbleSort(arr);
         /**
          * 2.快速排序
          * 递归用法，先通过第一个数把数组分为小于它和大于它的两部门，
