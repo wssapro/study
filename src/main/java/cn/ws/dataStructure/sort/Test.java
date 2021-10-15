@@ -8,24 +8,24 @@ import java.util.Arrays;
 public class Test {
     public static void main(String[] args) {
         //长度为N的数组
-        int arr[] = new int[]{15,157,63,95,8,52,10,30,95,621,452,532,168};
+        int arr[] = new int[]{5,8,1,4,6,9,2,3,7};
         System.out.println(Arrays.toString(arr));
         /**
          * 1.冒泡排序
          * 外循环遍历N-1次，内循环第一次N-1次，之后递减。与前一个作比较，
          */
-        BubbleSort.bubbleSort(arr);
+        // BubbleSort.bubbleSort(arr);
         /**
          * 2.快速排序
          * 递归用法，先通过第一个数把数组分为小于它和大于它的两部门，
          * 在用递归以同样的方法处理这两部门，以及下去直到结束
          */
-        Quicksort.quickSort(arr, 0,arr.length-1);
+        Quicksort.sort(arr, 0,arr.length-1);
         /**
          * 3.插入排序
          * 始终认为前面是已经排好序的，寻找符合的位置插进去
          */
-        InsertSort.insertSort(arr);
+        // InsertSort.insertSort(arr);
         /**
          * 4.希尔排序
          * 快速版的插入排序，插入排序调整位置太多次，通过有规律的相隔比较进行插入
